@@ -1,0 +1,134 @@
+\documentclass[11pt]{article}
+
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{titling}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[document]{ragged2e}
+\usepackage[margin=.2in]{geometry}
+
+
+\pagenumbering{gobble}
+\clearpage
+
+\titleformat{\section}
+{\huge }
+{}
+{1em}
+{ \bfseries }[\titlerule]
+
+\titleformat{\subsection}[runin]
+{\bfseries }
+{\hspace{-.1in}}
+{0em}
+{}[\hfill]
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{-1em}
+{}[::]
+
+\titlespacing{\subsubsection}
+{2em} %Pre-spacing Horizontal
+{1em} %Pre-Spacing Vertical
+{0em} %Post-Spacing Vertical
+
+\renewcommand{\maketitle}{
+   \begin{center}
+   {\huge \bfseries
+   \theauthor\\}
+   {\color{red} Software Engineer}
+
+zaowen.github.io ---
+{\bfseries ZacharyOwen@acm.org} --- 
+www.github.com/zaowen  
+\\
+(605) 877 - 2043 
+%---
+%434 E. Fairmont Blvd 57701 SD, Rapid City 
+\end{center}
+}
+\author{Zachary Owen}
+
+\begin{document}
+
+\maketitle
+
+\section{E{\color{gray}xperience}}
+
+\subsection{Black Hills Information Security \hfill}
+{\it May 2017 - Aug '18}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+\item Created a plugin that outputs connection logs created by the Bro IDS packet analyzer to MongoDB. 
+\\Created documentation for Bro-Plugins.
+\end{itemize}
+
+\subsection{Sencore: Software Engineering Internship \hfill}
+{\it May 2017 - Aug '17}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+\item Attained experience with Git/SVN source control as well as CI with crucible and gerrit.
+\item Created program for configuring proprietary video over IP machines on device and over ssh.
+\end{itemize}
+
+\subsection{SDSMT Mechanical Engineering Dept \hfill}
+{\it September 2014 - Nov '14}
+\begin{itemize}
+\setlength\itemsep{-.5em}
+\item Ported a FORTRAN77 engine piston simulation program to the more recent Fujitsu compiler. 
+\item Created front end display and management program for engine piston simulation in C\#
+\end{itemize}
+
+\section{P{\color{gray}rojects}}
+
+\subsubsection{Encryption Suite}
+Wrote various implementations of Encryption algorithms (RSA, DES) using GNU Multiprecision library.
+
+\subsubsection{Kiosk ArcGIS}
+ Created a Java Swing application that parsed XMLs to read paleontology data and display bone structures and 
+ locations on a map with custom search and filters.
+
+\subsubsection{Personal Shell}
+Developed a shell for personal use in C. Implements pipes, redirection and signal processing.
+
+\subsubsection{Dotfile Manager}
+Wrote a manager for linux configuration files.
+The manager ensures that the configurations are consistent and updated on all computers as well as tracks local changes.
+
+\section{S{\color{gray}kills}}
+
+\begin{multicols}{2}
+	\begin{itemize}
+	\item Proficient in C, C++, Bash, Python, \LaTeX
+	\item Familiar C\#, golang, Rust, SQL, MongoDB, haskell, lisp
+	\item Linux and Unix based Operating Systems
+	\item Agile Software Development
+	\item Willingness to learn new techniques and technology
+\end{itemize}
+\end{multicols}
+
+\section{A{\color{gray}ctivities}}
+
+\begin{multicols}{2}
+\begin{itemize}
+	\item $3^{rd}$ place Microsoft campus coding competition
+	\item 2 year Google Code Jam Qualifier
+	\item Online coding challenges and ProjectEuler, codeforces, kattis
+	\item Member ACM and Security Club
+	\item Contributions to Open Source Projects
+\begin{multicols}{2}
+	\begin{itemize} 
+		\item RITA 
+		\item newsboat 
+		\item qutebrowser 
+		\item BroMongoDB 
+	\end{itemize}
+\end{multicols}
+\end{itemize}
+\end{multicols}
+
+
+\end{document}
