@@ -36,19 +36,22 @@
 {0em} %Post-Spacing Vertical
 
 \renewcommand{\maketitle}{
-   \begin{center}
+\begin{multicols}{2}
+\begin{flushleft}
    {\huge \bfseries
    \theauthor\\}
    {\color{red} Software Engineer}
+\end{flushleft}
 
-zaowen.github.io ---
-{\bfseries ZacharyOwen@acm.org} --- 
-www.github.com/zaowen  
-\\
-(605) 877 - 2043 
-%---
-%434 E. Fairmont Blvd 57701 SD, Rapid City 
-\end{center}
+\columnbreak
+
+\begin{flushright}
+{\bfseries ZacharyOwen@acm.org} \\
+www.github.com/zaowen \\
+zaowen.github.io \\
+(605) 877 - 2043 \\
+\end{flushright}
+\end{multicols}
 }
 \author{Zachary Owen}
 
@@ -63,7 +66,7 @@ www.github.com/zaowen
 \begin{itemize}
 \setlength\itemsep{-.5em}
 \item Created a plugin that outputs connection logs created by the Bro IDS packet analyzer to MongoDB. 
-\\Created documentation for Bro-Plugins.
+\item Created documentation for Bro-Plugins.
 \end{itemize}
 
 \subsection{Sencore: Software Engineering Internship \hfill}
@@ -75,7 +78,7 @@ www.github.com/zaowen
 \end{itemize}
 
 \subsection{SDSMT Mechanical Engineering Dept \hfill}
-{\it September 2014 - Nov '14}
+{\it Sept 2014 - Nov '14}
 \begin{itemize}
 \setlength\itemsep{-.5em}
 \item Ported a FORTRAN77 engine piston simulation program to the more recent Fujitsu compiler. 
@@ -103,7 +106,7 @@ The manager ensures that the configurations are consistent and updated on all co
 \begin{multicols}{2}
 	\begin{itemize}
 	\item Proficient in C, C++, Bash, Python, \LaTeX
-	\item Familiar C\#, golang, Rust, SQL, MongoDB, haskell, lisp
+	\item Familiar C\#, golang, Rust, SQL, MongoDB, haskell, lisp and FORTRAN
 	\item Linux and Unix based Operating Systems
 	\item Agile Software Development
 	\item Willingness to learn new techniques and technology
